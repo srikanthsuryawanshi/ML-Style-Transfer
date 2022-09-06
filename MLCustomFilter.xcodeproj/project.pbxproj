@@ -16,6 +16,14 @@
 		BEAB2D9128C5EEC3005AF152 /* MLCustomFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2D9028C5EEC3005AF152 /* MLCustomFilterTests.swift */; };
 		BEAB2D9B28C5EEC3005AF152 /* MLCustomFilterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2D9A28C5EEC3005AF152 /* MLCustomFilterUITests.swift */; };
 		BEAB2D9D28C5EEC3005AF152 /* MLCustomFilterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2D9C28C5EEC3005AF152 /* MLCustomFilterUITestsLaunchTests.swift */; };
+		BEAB2DAC28C606B4005AF152 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2DAB28C606B4005AF152 /* TrainViewController.swift */; };
+		BEAB2DAE28C60ED9005AF152 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2DAD28C60ED9005AF152 /* TestViewController.swift */; };
+		BEAB2DBF28C612F0005AF152 /* Storyboard+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2DBE28C612F0005AF152 /* Storyboard+extensions.swift */; };
+		BEAB2DC228C62255005AF152 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2DC128C62255005AF152 /* ImagePicker.swift */; };
+		BEAB2DC528C624F1005AF152 /* MLTrainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2DC428C624F1005AF152 /* MLTrainer.swift */; };
+		BEAB2DC728C629D4005AF152 /* UIImage+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2DC628C629D4005AF152 /* UIImage+extensions.swift */; };
+		BEAB2DC928C62A87005AF152 /* MLFIlter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB2DC828C62A87005AF152 /* MLFIlter.swift */; };
+		BEAB2DCF28C7146A005AF152 /* TrainingData in Resources */ = {isa = PBXBuildFile; fileRef = BEAB2DCE28C7146A005AF152 /* TrainingData */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		BEAB2D9628C5EEC3005AF152 /* MLCustomFilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLCustomFilterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAB2D9A28C5EEC3005AF152 /* MLCustomFilterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLCustomFilterUITests.swift; sourceTree = "<group>"; };
 		BEAB2D9C28C5EEC3005AF152 /* MLCustomFilterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLCustomFilterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BEAB2DAB28C606B4005AF152 /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
+		BEAB2DAD28C60ED9005AF152 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		BEAB2DBE28C612F0005AF152 /* Storyboard+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+extensions.swift"; sourceTree = "<group>"; };
+		BEAB2DC128C62255005AF152 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BEAB2DC428C624F1005AF152 /* MLTrainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLTrainer.swift; sourceTree = "<group>"; };
+		BEAB2DC628C629D4005AF152 /* UIImage+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extensions.swift"; sourceTree = "<group>"; };
+		BEAB2DC828C62A87005AF152 /* MLFIlter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLFIlter.swift; sourceTree = "<group>"; };
+		BEAB2DCE28C7146A005AF152 /* TrainingData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TrainingData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +115,15 @@
 		BEAB2D7828C5EEC0005AF152 /* MLCustomFilter */ = {
 			isa = PBXGroup;
 			children = (
+				BEAB2DCE28C7146A005AF152 /* TrainingData */,
+				BEAB2DC328C624DF005AF152 /* ML */,
+				BEAB2DC028C62248005AF152 /* ImagePicker */,
+				BEAB2DBD28C612D7005AF152 /* Common */,
+				BEAB2DB828C60FD0005AF152 /* Home */,
+				BEAB2DAA28C60016005AF152 /* Test */,
+				BEAB2DA928C6000F005AF152 /* Train */,
 				BEAB2D7928C5EEC0005AF152 /* AppDelegate.swift */,
 				BEAB2D7B28C5EEC0005AF152 /* SceneDelegate.swift */,
-				BEAB2D7D28C5EEC0005AF152 /* ViewController.swift */,
 				BEAB2D7F28C5EEC0005AF152 /* Main.storyboard */,
 				BEAB2D8228C5EEC3005AF152 /* Assets.xcassets */,
 				BEAB2D8428C5EEC3005AF152 /* LaunchScreen.storyboard */,
@@ -125,6 +147,56 @@
 				BEAB2D9C28C5EEC3005AF152 /* MLCustomFilterUITestsLaunchTests.swift */,
 			);
 			path = MLCustomFilterUITests;
+			sourceTree = "<group>";
+		};
+		BEAB2DA928C6000F005AF152 /* Train */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB2DAB28C606B4005AF152 /* TrainViewController.swift */,
+			);
+			path = Train;
+			sourceTree = "<group>";
+		};
+		BEAB2DAA28C60016005AF152 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB2DAD28C60ED9005AF152 /* TestViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		BEAB2DB828C60FD0005AF152 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB2D7D28C5EEC0005AF152 /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BEAB2DBD28C612D7005AF152 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB2DBE28C612F0005AF152 /* Storyboard+extensions.swift */,
+				BEAB2DC628C629D4005AF152 /* UIImage+extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BEAB2DC028C62248005AF152 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB2DC128C62255005AF152 /* ImagePicker.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		BEAB2DC328C624DF005AF152 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB2DC428C624F1005AF152 /* MLTrainer.swift */,
+				BEAB2DC828C62A87005AF152 /* MLFIlter.swift */,
+			);
+			path = ML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +305,7 @@
 			files = (
 				BEAB2D8628C5EEC3005AF152 /* LaunchScreen.storyboard in Resources */,
 				BEAB2D8328C5EEC3005AF152 /* Assets.xcassets in Resources */,
+				BEAB2DCF28C7146A005AF152 /* TrainingData in Resources */,
 				BEAB2D8128C5EEC0005AF152 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +331,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAB2DC228C62255005AF152 /* ImagePicker.swift in Sources */,
+				BEAB2DAE28C60ED9005AF152 /* TestViewController.swift in Sources */,
 				BEAB2D7E28C5EEC0005AF152 /* ViewController.swift in Sources */,
+				BEAB2DAC28C606B4005AF152 /* TrainViewController.swift in Sources */,
+				BEAB2DBF28C612F0005AF152 /* Storyboard+extensions.swift in Sources */,
+				BEAB2DC928C62A87005AF152 /* MLFIlter.swift in Sources */,
+				BEAB2DC528C624F1005AF152 /* MLTrainer.swift in Sources */,
 				BEAB2D7A28C5EEC0005AF152 /* AppDelegate.swift in Sources */,
 				BEAB2D7C28C5EEC0005AF152 /* SceneDelegate.swift in Sources */,
+				BEAB2DC728C629D4005AF152 /* UIImage+extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,8 +517,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T88XDH69MW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MLCustomFilter/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to image which needs filter.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -464,8 +546,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T88XDH69MW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MLCustomFilter/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow access to image which needs filter.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
